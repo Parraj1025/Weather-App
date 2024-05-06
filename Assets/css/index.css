@@ -1,0 +1,65 @@
+
+
+header {
+    border: 2px solid black;
+    text-align: center;
+}
+#searchbar {
+   display: inline-block;
+    border: 2px solid black;
+    justify-content: center;
+    width: 36%;
+    padding: 1%;
+    margin: 1%;
+    min-height: 300px;
+    #searchbox {
+        width: 50%;
+    }
+    #searchBtn {
+        margin-left: 1%;
+        width: 45%;
+    }
+    #searchBtn:hover {
+        background-color: lightblue;
+    }
+
+    #list {
+        margin: 1%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        button {
+            width: 100%;
+        }
+    }
+}
+#container {
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+    border: 2px solid black;
+    width: 55%;
+    float: right;
+    height: 300px;
+}
+
+
+
+#forecast {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .fiveday{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+.date {
+    padding: 3%;
+    background-color: grey;
+    display: block;
+    width: fit-content;
+}

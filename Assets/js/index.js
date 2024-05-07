@@ -7,12 +7,19 @@ const weatherinfo = document.getElementById('currentConditions')
 const forecast = document.getElementById('forecast')
 const APIKey = '1f84a10cb7da5db222b9d855961dbfd7'
 
-
 const cities = []
 const weatherhistory = []
 const forecasthistory = []
 const currentwind = []
 const icon = []
+
+const date = new Date();
+let day = date.getDate()
+let month = date.getMonth()
+let year = date.getFullYear()
+
+let currentdate = `(${month}/${day}/${year})`
+
 
 
 //take input from search box, pull and organize data from API.
@@ -74,7 +81,8 @@ async function postdata () {
             main.setAttribute('class','cityinfo')
             
             let cityname = document.createElement('h1')
-            cityname.innerText = currentcity
+            cityname.innerText = (`${currentcity}  ${currentdate}`)
+
            
             main.appendChild(cityname)
            

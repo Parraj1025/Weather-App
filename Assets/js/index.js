@@ -16,6 +16,7 @@ const icon = []
 
 
 //take input from search box, pull and organize data from API.
+// https fix
 async function getCity (city) {
     if (!city) {
     }

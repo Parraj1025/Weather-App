@@ -20,9 +20,9 @@ async function getCity (city) {
     if (!city) {
     }
     else {
-    const weatherApi = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`)
+    const weatherApi = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`)
     const weatherdata = await weatherApi.json()
-    const forecastApi = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=imperial`)
+    const forecastApi = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=imperial`)
     const forecastdata = await forecastApi.json()
  //current weather conditions and sent up to global storage
     let cityweather = weatherdata.main
@@ -99,8 +99,12 @@ async function postdata () {
             main.appendChild(cityinfo)
             cityInfo.appendChild(main)
 
+            let infotext = document.createElement('div')
+            infotext.innerText = '5 day forecast'
+
             let fiveday = document.createElement('div')
             fiveday.setAttribute('class','fiveday')
+
             
             
             for (d=n; d<forecasthistory.length;d++) {
@@ -131,7 +135,8 @@ async function postdata () {
                 fiveday.appendChild(day)
             }
             n+=5
-            forecast.appendChild(fiveday)
+            infotext.appendChild(fiveday)
+            forecast.appendChild(infotext)
             
             }
 

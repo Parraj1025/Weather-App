@@ -22,6 +22,7 @@ Landing Page
 
 Rendered information 
 
-<img width="1439" alt="Screenshot 2024-05-15 at 10 52 20 PM" src="https://github.com/Parraj1025/Weather-App/assets/161391019/c5f7ec03-fce3-42dd-b988-e621dad17166">
+<img width="1440" alt="Screenshot 2024-05-17 at 12 47 26 AM" src="https://github.com/Parraj1025/Weather-App/assets/161391019/0654cf26-c0bc-4ade-b353-93f555793046">
+
 
 history buttons loaded based on previus search
